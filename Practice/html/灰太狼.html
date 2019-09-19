@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>qq音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="../css/huitailang.css" />
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.mCustomScrollbar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/player.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/progress.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lyric.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/huitailang.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<!-- 界面头部 -->
+		<div class="header">
+			<h1 class="logo"><a href="#"></a></h1>
+			<ul class="register">
+				<li>登录</li>
+				<li>设置</li>
+			</ul>
+		</div>
+
+		<!-- 音乐选择界面以及功能点击按钮 -->
+		<div class="content">
+			<div class="content_in">
+				<!-- 音乐信息显示左侧栏 -->
+				<div class="content_left">
+					<div class="content_toolBar">
+						<span><i></i>收藏</span>
+						<span><i></i>添加到</span>
+						<span><i></i>下载</span>
+						<span><i></i>删除</span>
+						<span><i></i>清空列表</span>
+					</div>
+					<!-- 目录列表，包含歌曲歌手时长 -->
+					<div class="content_list" data-mcs-theme="minimal-dark">
+						<ul class="content-ul">
+							<!-- 第一列信息分类-->
+							<li class="list_title">
+								<div class="list_check"><i></i></div>
+								<div class="list_number"></div>
+								<div class="list_name">歌曲</div>
+								<div class="list_singer">歌手</div>
+								<div class="list_time">时长</div>
+							</li>
+							<!--第一条歌曲及其包含信息  -->
+						</ul>
+					</div>
+				</div>
+
+				<!--  音乐信息显示右侧栏-->
+				<div class="conrent_right">
+
+					<div class="song_top">
+						<!-- 歌曲相关图片 -->
+						<a href="javascript:;" class="song-info-pie">
+							<img src="">
+						</a>
+						<!-- 歌曲相关信息 -->
+						<div class="song-info-name">歌曲名称：
+							<a href="javascript:;">Master Of Puppets</a>
+						</div>
+						<div class="song-info-singer">歌手名：
+							<a href="javascript:;">Metallica</a>
+						</div>
+						<div class="song-info-album">专辑名：
+							<a href="javascript:;">Master Of Puppets</a>
+						</div>
+					</div>
+					<!-- 歌词内容显示 -->
+					<div class="song_content_container">
+					<ul class="song_content"></ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 界面底部 -->
+		<div class="footer">
+			<div class="footer_in">
+				<!-- 播放控制按钮 -->
+				<a href="javascript:;" class="music-pre" title="上一曲"></a>
+				<a href="javascript:;" class="music-play " title="暂停/开始"></a>
+				<a href="javascript:;" class="music-next" title="下一曲"></a>
+				<!-- 进度条上面的歌手信息以及时间 -->
+				<div class="music-progress-infor">
+					<div class="music-progress-infor-top">
+						<span class="music-progress-name">
+							Stargazer-Rainbow
+						</span>
+						<span class="music-progress-time">
+							02:07 / 08:26
+						</span>
+					</div>
+					<!-- 进度条 -->
+					<div class="music-progress-infor-bottom">
+						<div class="music-progress-bottom-line">
+							<div class="music-progress-bottom-dot">
+							</div>
+						</div> 
+					</div>
+				</div>
+				<!-- 播放过程操作按钮 -->
+
+				<!-- 四种模式对应四个class -->
+				<a href="javascript:;" class="music-mode" title="播放模式"></a>
+				<a href="javascript:;" class="music-collect " title="收藏"></a>
+				<a href="javascript:;" class="music-down" title="下载"></a>
+				<a href="javascript:;" class="music-comments" title="评论"></a>
+				<a href="javascript:;" class="music-only " title="纯净模式"></a>
+				<!-- 音量控制 -->
+				<div class="music-voice-info">
+					<a href="javascript:;" class="music-voice " title="关闭声音"></a>
+					<!-- 音量进度条 -->
+					<div class="music-voice-bottom">
+						<div class="music-voice-bottom-line">
+							<div class="music-voice-line-dot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 设置歌曲封面为背景 -->
+		<div class="mask-bg"></div>
+
+		<!-- 添加一个朦胧的背景放在mask-bg上面，字体全部呈现 -->
+		<div class="mask"></div>
+		
+		<!-- 播放音乐 -->
+		<audio src="" autoplay="autoplay">
+			当前浏览器不支持audio
+		</audio>
+			
+	</body>
+</html>

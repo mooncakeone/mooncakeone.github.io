@@ -1,0 +1,86 @@
+/*样式重置*/
+*{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}
+table{border-collapse: collapse;}/*表格去掉间隙*/
+input,textarea{outline: none;}
+textarea{resize: none;overflow: auto;}/*overflow: auto文本框没有右侧滚动条*/
+body{font-size: 12px;font-family: "微雅软黑";}
+
+/*public*/
+.fl{float: left;}
+.fr{float: right;}
+.clear:after{content: "";display: block;clear: both;}
+/*颜色渐变*/
+.gradient{
+	background: -moz-linear-gradient(top,#ffffff,#f8f8f8);
+	background: -webkit-linear-gradient(top,#ffffff,#f8f8f8);
+	background: -ms-linear-gradient(top,#ffffff,#f8f8f8);
+	background: gradient(top,#ffffff,#f8f8f8);
+	/*ie9*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColor=#ffffff,endColor=#f8f8f8)";
+}
+
+
+/*layout*/
+#header{
+	height: 30px;
+	width: 960px;
+	border-radius:0 0 6px 6px;
+	margin: auto;
+}
+
+#nav{
+	height: 100px;
+	width: 960px;
+	margin: auto;
+	background-color: red;
+}
+
+#search{
+	height: 114px;
+	width: 958px;
+	margin: auto;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+}
+
+
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main{
+	width: 710px
+}
+
+ .section{
+	width: 310px;
+	height: 200px;
+	padding: 0 15px;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.options{
+	width: 340px;
+	height: 200px;
+	background:#ff9;
+}
+
+.main_ad{
+	height: 200px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+
+
+.side{
+	width: 240px;
+}
+
+
+
