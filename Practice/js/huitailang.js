@@ -103,11 +103,11 @@ $(function() {
 			player.musicSeekTo(value);
 
 		});
-		//拖动设置位置
-		progress.progressMove(function(value){
-			player.musicSeekTo(value);
-			
-		});
+		// //拖动设置位置
+		// progress.progressMove(function(value){
+		// 	player.musicSeekTo(value);
+		// 	
+		// });
 
 		/*音量进度条*/
 		var $voicBottom = $(".music-voice-bottom");
@@ -118,9 +118,9 @@ $(function() {
 		voiceProgress.progressClick(function(value) {
 			player.musicVoiceSeekTo(value);
 		});
-		voiceProgress.progressMove(function(value){
-			player.musicVoiceSeekTo(value);
-		});
+		// voiceProgress.progressMove(function(value){
+		// 	player.musicVoiceSeekTo(value);
+		// });
 	}
 
 	//初始化事件监听
