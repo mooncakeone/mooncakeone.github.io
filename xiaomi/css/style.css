@@ -285,24 +285,6 @@ body{
 	height: 60px;
 	line-height: 60px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .xianmishouji:hover .goods{
 	display: block;
 }
@@ -438,15 +420,13 @@ body{
 .seckill-header{
 background: #f5f5f5 url(../images/1.jpg) 50% 0 no-repeat;
     height: 170px;
-	position: relative;
+    padding-top: 102px;
+    box-sizing: border-box;
 }
 .shopping-spot{
 	width: 1226px;
 	height: 68px;
-/* border: 1px solid red; */
-	position: absolute;
-	bottom: 0;
-	left: 64px;
+	margin: 0 auto;
 }
 .s-left{
 	float: left;
