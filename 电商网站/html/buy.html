@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../css/buy.css"/>
+	<title>购买页</title>
+</head>
+<body>
+		<!-- 导航栏 -->
+	<nav class="navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Bootstrap 商城</a>
+			</div>
+			<!-- 导航链接及内容切换 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="active dropdown-toggle" data-toggle="dropdown">
+							商品分类<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="category.html">服装 &amp; 饰品</a></li>
+							<li><a href="category.html">母婴用品</a></li>
+							<li><a href="category.html">美容 &amp; 保健</a></li>
+							<li><a href="category.html">电子产品</a></li>
+							<li><a href="category.html">家具</a></li>
+							<li><a href="category.html">家居 &amp; 园艺</a></li>
+							<li><a href="category.html">箱包</a></li>
+							<li><a href="category.html">鞋</a></li>
+							<li><a href="category.html">体育 &amp; 娱乐</a></li>
+							<li><a href="category.html">手表</a></li>
+							<li class="divider"></li>
+							<li><a href="ecommerce.html">所有商品分类</a></li>
+						</ul>
+					</li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">精品推荐</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">
+							<span class="badge pull-right">4</span>
+							<i class="glyphicon glyphicon-shopping-cart"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="glyphicon glyphicon-user"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#myModal">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 模态框 modal-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">关闭</span>
+					</button>
+					<h2 class="modal-title" id="myModalLabel">登录</h2>
+				</div>
+				<div class="modal-body">
+					<form class="form-signin" role="form">
+						<h3 class="form-signin-heading">电子邮箱登录</h3>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="电子邮箱" required autofocus>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="密码" required/>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"  value="remember-me" />记住用户名
+							</label>
+						</div>
+						<button type="submit" class="btn btn-lg btn-block btn-primary">登录</button><br/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="content">
+		<div class="row">
+			<div class="col-md-3">
+				<h3 class="">管理订单</h3>
+				<div class="list-group">
+					<a href="account.html" class="list-group-item">所有订单</a>
+					<a href="account.html" class="list-group-item">管理反馈</a>
+					<a href="account.html" class="list-group-item">我的优惠券</a>
+					<a href="account.html" class="list-group-item">我的收货地址</a>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<h3>订单状态</h3>
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-default btn-sm">跟踪订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-danger btn-sm">取消订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-defalut btn-sm">跟踪订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-success btn-sm">完成订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-defalut btn-sm">跟踪订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-success btn-sm">完成订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+							
+				<div class="thumbnail">
+					<div class="row oder-status">
+						<div class="col-sm-1">
+							<img src="../images/m3.png" class="img-responsive">
+						</div>
+						<div class="col-sm-4">
+							<a href="product.html">小米Pro</a>
+						</div>
+						<div class="col-sm-1">
+							数量:1
+						</div>
+						<div class="col-sm-2">
+							$1499.99
+						</div>
+						<div class="col-sm-2">
+							<button class="btn btn-defalut btn-sm">跟踪订单</button>
+						</div>
+						<div class="col-sm-2">
+							爆款精品
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-12 ">
+					<ul class="pagination pull-right">
+						<li class="disabled"><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- 脚注 -->
+<div class="container">
+		<hr/>
+		<footer>
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-5">
+					<p>Copyright&copy;<a href="index.html">卓越科技</a>2019</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

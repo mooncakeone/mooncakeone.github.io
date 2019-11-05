@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<title>Bootstrap商城</title>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand">Bootstrap 商城</a>
+			</div>
+			<!-- 导航链接及内容切换 -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="active dropdown-toggle" data-toggle="dropdown">
+							商品分类<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="category.html">服装 &amp; 饰品</a></li>
+							<li><a href="category.html">母婴用品</a></li>
+							<li><a href="category.html">美容 &amp; 保健</a></li>
+							<li><a href="category.html">电子产品</a></li>
+							<li><a href="category.html">家具</a></li>
+							<li><a href="category.html">家居 &amp; 园艺</a></li>
+							<li><a href="category.html">箱包</a></li>
+							<li><a href="category.html">鞋</a></li>
+							<li><a href="category.html">体育 &amp; 娱乐</a></li>
+							<li><a href="category.html">手表</a></li>
+							<li class="divider"></li>
+							<li><a href="ecommerce.html">所有商品分类</a></li>
+						</ul>
+					</li>
+				<li><a href="#">我的收藏</a></li>
+				<li><a href="#">精品推荐</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="buy.html">
+							<span class="badge pull-right">4</span>
+							<i class="glyphicon glyphicon-shopping-cart"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="glyphicon glyphicon-user"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#myModal">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 模态框 modal-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">关闭</span>
+					</button>
+					<h2 class="modal-title" id="myModalLabel">登录</h2>
+				</div>
+				<div class="modal-body">
+					<form class="form-signin" role="form">
+						<h3 class="form-signin-heading">电子邮箱登录</h3>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="电子邮箱" required autofocus>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="密码" required/>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"  value="remember-me" />记住用户名
+							</label>
+						</div>
+						<button type="submit" class="btn btn-lg btn-block btn-primary">登录</button><br/>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 内容 -->
+	<div class="container" id="content"> 
+	<!-- 轮播图 -->
+		<div class="row carousel-holder">
+			<div class="col-lg-10 col-lg-offset-1">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-side-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-side-to="1" ></li>
+						<li data-target="#carousel-example-generic" data-side-to="2" ></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="../images/9.jpg" class="slide-image " alt="" >
+						</div>
+						<div class="item">
+							<img src="../images/7.jpg" class="slide-image " alt="">
+						</div>
+						<div class="item">
+							<img src="../images/8.jpg" class="slide-image " alt="">
+						</div>
+					</div>
+					<a href="#carousel-example-generic" class="left carousel-control" data-side="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#carousel-example-generic" class="right carousel-control" data-side="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<hr/>
+	<!-- 产品目录 -->
+		<div class="row">
+			<div class="col-sm-4 col-md-3">
+				<h3>产品目录</h3>
+				<div class="list-group">
+					<a href="category.html" class="list-group-item">服装 &amp; 饰品</a>
+					<a href="category.html" class="list-group-item">母婴用品</a>
+					<a href="category.html" class="list-group-item">美容 &amp; 保健</a>
+					<a href="category.html" class="list-group-item">电子产品</a>
+					<a href="category.html" class="list-group-item">家具</a>
+					<a href="category.html" class="list-group-item">家居 &amp; 园艺</a>
+					<a href="category.html" class="list-group-item">箱包</a>
+					<a href="category.html" class="list-group-item">鞋</a>
+					<a href="category.html" class="list-group-item">体育 &amp; 娱乐</a>
+					<a href="category.html" class="list-group-item">手表</a>
+				</div>
+			</div>
+			<div class="col-sm-8 col-md-9">
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m3.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m1.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m4.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m5.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m6.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="../images/m3.png" alt="" class="ca-img">
+							<div class="add-to-cart" >
+								<a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption">
+								<h4 class="pull-right">$2244.99</h4>
+								<h4><a href="product.html">1<sup>st</sup>爆款精品</a></h4>
+								<p>苏泊尔(SUPOR)电压力锅高压锅CYSB50FCW20QJ-100,年终爆款秒杀价，数量有限</p>
+								<div class="ratings">
+									<p class="pull-right"><a href="product.html#comments">15 评论</a></p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- 脚注 -->
+	<div class="container">
+		<hr/>
+		<footer>
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-5">
+					<p>Copyright&copy;<a href="index.html">卓越科技</a>2019</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

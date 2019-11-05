@@ -1,0 +1,25 @@
+.con-right{
+	margin-top: 55px;
+}
+.bg-img{
+	background-color: cadetblue;
+	width: 100%;
+}
+.bg-img-th{
+	background-color: antiquewhite;
+	margin-top: 6px;
+	opacity: 0.8;
+}
+.bg-img-th:hover{
+	opacity: 1;
+}
+.small-pic{
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.hob-apply img{
+	background-color: cadetblue;
+}
+.add-to-cart{
+	text-align: center;
+}
